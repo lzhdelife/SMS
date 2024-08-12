@@ -2,6 +2,12 @@
 
 ## 效果展示
 
+收到验证码后，自动拦截短信发送到电脑端，在电脑右下角有托盘消息提示，并自动复制到Windows剪贴板中，直接粘贴就可以。
+
+![image-20240812233032541](README.assets/image-20240812233032541.png)
+
+![image-20240812233253703](README.assets/image-20240812233253703.png)
+
 
 
 ## 实现步骤
@@ -34,6 +40,22 @@ https://www.youtube.com/watch?v=Bkt6QpkoVfw&t=272s
 
 **B.将代码clone到本地部署运行**
 
+clone项目
+
 ```bash
+git clone git@github.com:lzhdelife/SMS.git
+cd SMS
+```
+
+安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+运行`main.py`
+
+```bash
+python main.py
 ```
 
