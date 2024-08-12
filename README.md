@@ -20,15 +20,20 @@ https://github.com/pppscn/SmsForwarder
 ### 2.SmsForwarder配置
 注意！一般手机都默认开启了验证码安全保护，需要在设置里面搜索验证码进行关闭。
 基础配置参考官方wiki
+
 https://gitee.com/pp/SmsForwarder/wikis/pages
 
 **pushplus配置参考**
-https://www.amjun.com/485.html
-https://www.youtube.com/watch?v=Bkt6QpkoVfw&t=272s
+
+博客：https://www.amjun.com/485.html
+
+视频：https://www.youtube.com/watch?v=Bkt6QpkoVfw&t=272s
 
 
 
 ### 3.Socket配置
+
+需要手机与电脑在同一局域网下
 
 **A.发送通道配置如下**
 
