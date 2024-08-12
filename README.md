@@ -37,7 +37,7 @@ https://gitee.com/pp/SmsForwarder/wikis/pages
 
 **A.发送通道配置如下**
 
-端口写65432，程序中socket接收端口设置为了65432
+端口写65432，程序中socket接收端口设置为了65432，可以在`config.json`文件中修改
 
 <img src="README.assets/image-20240812230315063.png" alt="image-20240812230315063" style="zoom: 33%;" />
 
