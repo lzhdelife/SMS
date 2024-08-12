@@ -35,15 +35,8 @@ https://gitee.com/pp/SmsForwarder/wikis/pages
 
 需要手机与电脑在同一局域网下
 
-**A.发送通道配置如下**
 
-端口写65432，程序中socket接收端口设置为了65432，可以在`config.json`文件中修改
-
-<img src="README.assets/image-20240812230315063.png" alt="image-20240812230315063" style="zoom: 33%;" />
-
-
-
-**B.将代码clone到本地部署运行**
+**A.将代码clone到本地部署运行**
 
 clone项目
 
@@ -63,4 +56,14 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+
+
+
+**B.发送通道配置如下**
+
+端口写65432，程序中socket接收端口设置为了65432，可以在`config.json`文件中修改
+
+<img src="README.assets/image-20240812230315063.png" alt="image-20240812230315063" style="zoom: 33%;" />
+
+
 
