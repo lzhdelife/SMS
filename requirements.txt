@@ -1,0 +1,5 @@
+json
+win10toast
+re
+socket
+pyperclip
