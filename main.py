@@ -1,5 +1,6 @@
 import socket
 import json
+import os
 
 def receive_message(port):
     # 创建socket对象
@@ -34,7 +35,9 @@ def receive_message(port):
 
 
 def main():
-    with open('config.json', 'r') as file:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    config_path = os.path.join(base_dir, 'config.json')
+    with open(config_path, 'r') as file:
         config = json.load(file)
     
     port = config['port']

@@ -1,4 +1,4 @@
-# 实现短信验证码自动在PC端同步
+# 电脑接短信--实现短信验证码自动在PC端同步
 
 ## 效果展示
 
@@ -19,9 +19,8 @@ https://github.com/pppscn/SmsForwarder
 
 ### 2.SmsForwarder配置
 注意！一般手机都默认开启了验证码安全保护，需要在设置里面搜索验证码进行关闭。
-基础配置参考官方wiki
 
-https://gitee.com/pp/SmsForwarder/wikis/pages
+SmsForwarder基础配置参考官方wikihttps://gitee.com/pp/SmsForwarder/wikis/pages
 
 **pushplus配置参考**
 
