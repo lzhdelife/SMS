@@ -64,5 +64,11 @@ python main.py
 
 <img src="README.assets/image-20240812230315063.png" alt="image-20240812230315063" style="zoom: 33%;" />
 
-
-
+注：每次发送完消息后，有报错：
+```
+WNDPROC return value cannot be converted to LRESULT
+TypeError: WPARAM is simple, so must be an int object (got NoneType)
+```
+这个问题不影响正常使用，只是看起来不太舒服。
+参见<https://github.com/jithurjacob/Windows-10-Toast-Notifications/pull/115>，是由于win10toast里一个函数的返回值类型有误。由于win10toast在2018年之后已经不再接受pr，这个问题只能本地手动修复。
+具体修复方法为：将win10toast的`__init__.py`中最后一行`on_destroy`函数的返回值从None换为0。

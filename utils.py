@@ -1,15 +1,7 @@
 import re
 import pyperclip
 from win10toast import ToastNotifier
-
-def extract_first_long_number(text):
-    # 匹配长度大于等于4的数字字符串
-    pattern = r'\d{4,}'
-    match = re.search(pattern, text)
-    if match:
-        return match.group(0)
-    return None
-
+from SmsCodeUtils import SmsCodeUtils
 
 def show_toast_notification(title, message, duration=3):
     # 创建通知对象
@@ -19,8 +11,9 @@ def show_toast_notification(title, message, duration=3):
 
 
 def copy_verification_code(text):
-    number = extract_first_long_number(text)
-    if number:
+    keywords_regex = r"验证码"
+    number = SmsCodeUtils.parse_sms_code_if_exists(keywords_regex,text)
+    if number is not None:
         # 复制到剪贴板
         pyperclip.copy(number)
         print(f"已复制到剪贴板: {number}")
@@ -36,5 +29,5 @@ def copy_verification_code(text):
 
 
 if __name__ == "__main__":
-    text = "这是一段包含数字1234、56789和100的文本。"
+    text = "【微信支付】754207(微信验证码，请勿泄露)，您于2024-09-02 11:57:21发起交易7700.00元"
     copy_verification_code(text)
