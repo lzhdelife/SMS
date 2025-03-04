@@ -3,8 +3,8 @@ import pyperclip
 from win10toast import ToastNotifier
 
 def extract_first_long_number(text):
-    # 匹配长度大于等于4的数字字符串
-    pattern = r'\d{4,}'
+    # 匹配长度大于等于4,且小于等于6的数字字符串，而且前后都不能是数字
+    pattern = r'(?<!\d)\d{4,6}(?!\d)'
     match = re.search(pattern, text)
     if match:
         return match.group(0)
